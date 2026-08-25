@@ -4,6 +4,10 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-08-25
+
+- Updated Next.js and its ESLint configuration to `15.5.24`.
+
 ## 2026-08-12
 
 - Added this changelog and organized it in reverse chronological order.
