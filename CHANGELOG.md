@@ -4,6 +4,12 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-09-22
+
+- Updated Next.js and its ESLint configuration to `15.5.26`.
+- Documented local setup, service configuration, validation, and database diagram workflows.
+- Added logical database diagrams in Mermaid and DBML formats.
+
 ## 2026-08-25
 
 - Updated Next.js and its ESLint configuration to `15.5.24`.
