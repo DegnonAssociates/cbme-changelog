@@ -4,6 +4,13 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-09-30
+
+- Added optional background PDF and ZIP generation so report-service failures do not roll back saved imports or delay report review.
+- Added private, immutable report inputs, bounded retries, worker leases and recovery, and report status and retry controls while preserving existing downloads.
+- Added an additive Prisma migration, standalone Railway worker commands, and a rollout and maintenance runbook. Background generation remains disabled until explicitly configured.
+- Restricted import/report access to authorized program members and removed the nonfunctional legacy PDF retry link.
+
 ## 2026-09-22
 
 - Updated Next.js and its ESLint configuration to `15.5.26`.
