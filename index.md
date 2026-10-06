@@ -8,6 +8,10 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-10-06
+
+- Moved the EPA template download, trainee setup guidance, spreadsheet requirements, and supervision scale from Instructions to EPA Import, above the upload form.
+
 ## 2026-09-30
 
 - Added optional background PDF and ZIP generation so report-service failures do not roll back saved imports or delay report review.
