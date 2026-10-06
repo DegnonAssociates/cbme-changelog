@@ -10,6 +10,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-06
 
+- Added trainee counts and a program-specific View Trainees page for global admins, accessible from Programs and each institution's program list. The roster shows uploaded program-assigned identifiers, encrypted LEARN IDs, trainee start dates, and stored PGY, with identifier search, PGY filtering, and pagination.
 - Moved the EPA template download, trainee setup guidance, spreadsheet requirements, and supervision scale from Instructions to EPA Import, above the upload form.
 
 ## 2026-09-30
