@@ -6,6 +6,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-10
 
+- Made Check spreadsheet the primary staging import action, automatically opening column matching when headers need attention. Kept manual adjustments in a smaller link and preserved column selections across rechecks.
 - Simplified staging imports to always read the first tab, removing worksheet selection and extra-tab notices while retaining header-row and column matching controls.
 - Highlighted unmatched or duplicate column mappings, unmatched trainees, and cell errors with explicit attention labels; added spacing and small-screen wrapping between spreadsheet action buttons.
 - Added staging-only worksheet/header selection, explicit column matching and ignored columns, editable cell-level corrections, and a corrected XLSX download from the validated preview. Confirmation binds these choices and edits to the preview and repeats all validation; original files and production's import flow remain unchanged.
