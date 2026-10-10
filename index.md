@@ -12,6 +12,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 - Added a staging-only private R processor for spreadsheet, PDF, and ZIP generation using the supplied CBME package and model, with authenticated requests, bounded concurrency, timeouts, and isolated job files.
 - Added an explicit staging provider switch for imports and background reports; the existing provider remains the default and private routing is rejected outside staging.
+- Serialized private-processor exports in the legacy import path to respect its one-job capacity while leaving the existing provider's parallel behavior unchanged.
 - Added synthetic local and Railway pre-deploy checks without database or storage writes. Production configuration and deployment remain unchanged.
 
 ## 2026-10-06
