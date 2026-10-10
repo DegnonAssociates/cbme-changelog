@@ -4,6 +4,12 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-10-10
+
+- Added a staging-only private R processor for spreadsheet, PDF, and ZIP generation using the supplied CBME package and model, with authenticated requests, bounded concurrency, timeouts, and isolated job files.
+- Added an explicit staging provider switch for imports and background reports; the existing provider remains the default and private routing is rejected outside staging.
+- Added synthetic local and Railway pre-deploy checks without database or storage writes. Production configuration and deployment remain unchanged.
+
 ## 2026-10-06
 
 - Added trainee counts and a program-specific View Trainees page for global admins, accessible from Programs and each institution's program list. The roster shows uploaded program-assigned identifiers, encrypted LEARN IDs, trainee start dates, and stored PGY, with identifier search, PGY filtering, and pagination.
