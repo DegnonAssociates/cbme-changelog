@@ -10,6 +10,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-10
 
+- Added a staging-only check-and-confirm spreadsheet import: automatic header/table detection, safe formatting normalization, exact cell errors, and a no-write preview with trainee/measurement counts. Confirmation revalidates access and a signed file/user/program-bound preview; R receives the normalized workbook. Production's legacy import path is unchanged.
 - Normalized numeric text PGY cells before persistence, rejected invalid PGY types, and corrected import summaries to count stored measurements rather than spreadsheet rows.
 - Added guarded staging-only scheduled input cleanup with separate input credentials; retained the 30-day input retention period and protection for active jobs and report outputs.
 - Added isolated staging input/output buckets, program-authorized private downloads, and storage smoke checks with optional synthetic test fixtures; production AWS defaults remain unchanged.
