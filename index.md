@@ -10,6 +10,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-10
 
+- Added staging-only worksheet/header selection, explicit column matching and ignored columns, editable cell-level corrections, and a corrected XLSX download from the validated preview. Confirmation binds these choices and edits to the preview and repeats all validation; original files and production's import flow remain unchanged.
 - Added staging-only unmatched trainee resolution with explicit, program-scoped choices and preview-bound confirmation; matching changes only the current upload, never the roster.
 - Added assessment-level duplicate detection, opt-in skipping of identical rows, links to earlier imports, and blocking of conflicting ratings. An atomic, per-program database lock rechecks duplicates before saving, including simultaneous confirmations; no schema migration is required.
 - Added a staging-only check-and-confirm spreadsheet import: automatic header/table detection, safe formatting normalization, exact cell errors, and a no-write preview with trainee/measurement counts. Confirmation revalidates access and a signed file/user/program-bound preview; R receives the normalized workbook. Production's legacy import path is unchanged.
