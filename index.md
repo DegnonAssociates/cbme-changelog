@@ -10,6 +10,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-10
 
+- Added isolated staging input/output buckets, program-authorized private downloads, and storage smoke checks with optional synthetic test fixtures; production AWS defaults remain unchanged.
 - Added a staging-only private R processor for spreadsheet, PDF, and ZIP generation using the supplied CBME package and model, with authenticated requests, bounded concurrency, timeouts, and isolated job files.
 - Added an explicit staging provider switch for imports and background reports; the existing provider remains the default and private routing is rejected outside staging.
 - Serialized private-processor exports in the legacy import path to respect its one-job capacity while leaving the existing provider's parallel behavior unchanged.
