@@ -6,6 +6,8 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-10
 
+- Added staging-only unmatched trainee resolution with explicit, program-scoped choices and preview-bound confirmation; matching changes only the current upload, never the roster.
+- Added assessment-level duplicate detection, opt-in skipping of identical rows, links to earlier imports, and blocking of conflicting ratings. An atomic, per-program database lock rechecks duplicates before saving, including simultaneous confirmations; no schema migration is required.
 - Added a staging-only check-and-confirm spreadsheet import: automatic header/table detection, safe formatting normalization, exact cell errors, and a no-write preview with trainee/measurement counts. Confirmation revalidates access and a signed file/user/program-bound preview; R receives the normalized workbook. Production's legacy import path is unchanged.
 - Avoided secondary mixed-year/season warnings caused solely by invalid cells, keeping spreadsheet correction messages focused on the source problem.
 - Restricted header and season alias lookup to explicit supported entries.
