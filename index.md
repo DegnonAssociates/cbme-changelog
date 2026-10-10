@@ -10,6 +10,8 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-10
 
+- Normalized numeric text PGY cells before persistence, rejected invalid PGY types, and corrected import summaries to count stored measurements rather than spreadsheet rows.
+- Added guarded staging-only scheduled input cleanup with separate input credentials; retained the 30-day input retention period and protection for active jobs and report outputs.
 - Added isolated staging input/output buckets, program-authorized private downloads, and storage smoke checks with optional synthetic test fixtures; production AWS defaults remain unchanged.
 - Added a staging-only private R processor for spreadsheet, PDF, and ZIP generation using the supplied CBME package and model, with authenticated requests, bounded concurrency, timeouts, and isolated job files.
 - Added an explicit staging provider switch for imports and background reports; the existing provider remains the default and private routing is rejected outside staging.
