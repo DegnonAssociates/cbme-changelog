@@ -10,6 +10,8 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-10
 
+- Simplified staging imports to always read the first tab, removing worksheet selection and extra-tab notices while retaining header-row and column matching controls.
+- Highlighted unmatched or duplicate column mappings, unmatched trainees, and cell errors with explicit attention labels; added spacing and small-screen wrapping between spreadsheet action buttons.
 - Added staging-only worksheet/header selection, explicit column matching and ignored columns, editable cell-level corrections, and a corrected XLSX download from the validated preview. Confirmation binds these choices and edits to the preview and repeats all validation; original files and production's import flow remain unchanged.
 - Added staging-only unmatched trainee resolution with explicit, program-scoped choices and preview-bound confirmation; matching changes only the current upload, never the roster.
 - Added assessment-level duplicate detection, opt-in skipping of identical rows, links to earlier imports, and blocking of conflicting ratings. An atomic, per-program database lock rechecks duplicates before saving, including simultaneous confirmations; no schema migration is required.
