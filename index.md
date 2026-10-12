@@ -10,6 +10,9 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-12
 
+- Added staging-only active navigation and persistent selected-program context across dashboard and administration pages.
+- Clarified PDF/ZIP generation states and retry actions, distinguishing saved assessments from downloadable reports; added useful refresh and first-upload actions for empty or unavailable history.
+- Simplified staging account settings with inline validation, pending controls, persistent save confirmation, and an explicit re-sign-in step after email changes; bound edits to the authenticated account and preserved confirmation while the session still uses the previous email.
 - Added a staging-only searchable trainee roster with program/PGY filters, pagination, explicit empty states, and program-specific setup links; kept trainee dates stable across browser timezones.
 - Clarified staging trainee setup with the destination program, required spreadsheet headings, template links, and actionable file/row errors; verified destination access again on submission.
 - Added a task-focused staging Start page for trainee management, assessment uploads, and Results, while preserving detailed guidance and production's existing screens.
