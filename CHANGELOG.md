@@ -4,6 +4,13 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-10-12
+
+- Added a staging-only Results destination with assessment history, explicit milestone/readiness links, and assessment downloads.
+- Added trainee detail alongside the comparison table, preserving trainee selection when switching report types and showing complete names, registered identifiers, program, and assessment period.
+- Corrected staging feedback identity and report context, isolating feedback state when switching trainees to prevent stale lookups from appearing for another trainee.
+- Added a staging-only results endpoint with program-access checks; production report views and calculations remain unchanged.
+
 ## 2026-10-10
 
 - Made Check spreadsheet the primary staging import action, automatically opening column matching when headers need attention. Kept manual adjustments in a smaller link and preserved column selections across rechecks.
