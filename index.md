@@ -10,6 +10,9 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-12
 
+- Added a staging-only searchable trainee roster with program/PGY filters, pagination, explicit empty states, and program-specific setup links; kept trainee dates stable across browser timezones.
+- Clarified staging trainee setup with the destination program, required spreadsheet headings, template links, and actionable file/row errors; verified destination access again on submission.
+- Added a task-focused staging Start page for trainee management, assessment uploads, and Results, while preserving detailed guidance and production's existing screens.
 - Added a staging-only Results destination with assessment history, explicit milestone/readiness links, and assessment downloads.
 - Added trainee detail alongside the comparison table, preserving trainee selection when switching report types and showing complete names, registered identifiers, program, and assessment period.
 - Corrected staging feedback identity and report context, isolating feedback state when switching trainees to prevent stale lookups from appearing for another trainee.
