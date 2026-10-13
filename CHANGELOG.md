@@ -9,6 +9,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 - Added an authenticated staging-only encrypted LEARN ID generator using the owner's supplied derivation rules and public RSA key, with a local template and an XLSX download accepted by the trainee importer.
 - Kept birthdates and SSN/SIN last-four digits out of generated downloads, logs, cookies, database records, and object storage; generation does not create or update trainees.
 - Protected saved staging trainee IDs by rejecting regeneration for registered program identifiers/NPI and rechecking new imports in a serializable transaction. Production screens, routing, configuration, and data remain unchanged.
+- Bound generator uploads to the configured public app origin so authenticated downloads work behind Railway's HTTPS proxy without trusting forwarded-host headers.
 
 ## 2026-10-12
 
