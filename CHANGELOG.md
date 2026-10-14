@@ -6,6 +6,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-14
 
+- Unified staging spreadsheet, PDF, and ZIP download buttons with aligned format labels and a darker green hover state; replaced button-link hover underlines with blue/teal background shading while preserving ordinary text-link underlines, keyboard focus, and production styling.
 - Removed duplicate assessment history from staging EPA Import and replaced it with a View Results link; history, report status, and downloads remain in Results.
 - Routed staging partial-success imports to Results with saved-data reassurance and no-repeat-upload guidance, including refresh/support actions when history is temporarily empty. Production's import history and recovery destination are unchanged.
 - Applied the approved blue and teal styling to staging: a cool canvas, clearer selected-program navigation, and task rows with an emphasized assessment upload action.
