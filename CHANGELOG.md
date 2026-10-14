@@ -4,6 +4,11 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-10-14
+
+- Applied the approved blue and teal styling to staging: a cool canvas, clearer selected-program navigation, and task rows with an emphasized assessment upload action.
+- Added matching light and dark palettes, keyboard focus treatments, and responsive dashboard spacing. The exact staging environment gate keeps production styling unchanged; task permissions, guidance, imports, and report calculations are preserved.
+
 ## 2026-10-13
 
 - Added an authenticated staging-only encrypted LEARN ID generator using the owner's supplied derivation rules and public RSA key, with a local template and an XLSX download accepted by the trainee importer.
