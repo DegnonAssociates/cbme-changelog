@@ -10,6 +10,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 - Added matching light and dark palettes, keyboard focus treatments, and responsive dashboard spacing. The exact staging environment gate keeps production styling unchanged; task permissions, guidance, imports, and report calculations are preserved.
 - Kept the staging mobile program dropdown within the sidebar's modal handling so dismissing nested menus does not leave the page unclickable.
 - Made Upload assessments match the other dashboard task rows, using a circular arrow and highlighting only on hover instead of a permanent blue row and button treatment.
+- Extended the staging blue and teal design to trainee setup, assessment uploads/history, report details, settings, and shared admin/account form elements, with consistent headings, panels, fields, buttons, contained tables, and responsive dialog styling. Existing actions, validations, report values, and production presentation are preserved.
 
 ## 2026-10-13
 
