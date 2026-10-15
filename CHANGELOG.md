@@ -10,6 +10,57 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 - Preserve the sender, HTML and plain-text content, and password-reset response behavior; bound each send to ten seconds and disable SDK retries to avoid duplicate sends after uncertain outcomes.
 - Document Railway credential references and removal of `AWS_MAIL_TOKEN` after deployment. The report worker continues to use S3 directly and requires no email settings.
 
+## 2026-10-14
+
+- Unified staging spreadsheet, PDF, and ZIP download buttons with aligned format labels and a darker green hover state; replaced button-link hover underlines with blue/teal background shading while preserving ordinary text-link underlines, keyboard focus, and production styling.
+- Removed duplicate assessment history from staging EPA Import and replaced it with a View Results link; history, report status, and downloads remain in Results.
+- Routed staging partial-success imports to Results with saved-data reassurance and no-repeat-upload guidance, including refresh/support actions when history is temporarily empty. Production's import history and recovery destination are unchanged.
+- Applied the approved blue and teal styling to staging: a cool canvas, clearer selected-program navigation, and task rows with an emphasized assessment upload action.
+- Added matching light and dark palettes, keyboard focus treatments, and responsive dashboard spacing. The exact staging environment gate keeps production styling unchanged; task permissions, guidance, imports, and report calculations are preserved.
+- Kept the staging mobile program dropdown within the sidebar's modal handling so dismissing nested menus does not leave the page unclickable.
+- Made Upload assessments match the other dashboard task rows, using a circular arrow and highlighting only on hover instead of a permanent blue row and button treatment.
+- Extended the staging blue and teal design to trainee setup, assessment uploads/history, report details, settings, and shared admin/account form elements, with consistent headings, panels, fields, buttons, contained tables, and responsive dialog styling. Existing actions, validations, report values, and production presentation are preserved.
+
+## 2026-10-13
+
+- Added an authenticated staging-only encrypted LEARN ID generator using the owner's supplied derivation rules and public RSA key, with a local template and an XLSX download accepted by the trainee importer.
+- Kept birthdates and SSN/SIN last-four digits out of generated downloads, logs, cookies, database records, and object storage; generation does not create or update trainees.
+- Protected saved staging trainee IDs by rejecting regeneration for registered program identifiers/NPI and rechecking new imports in a serializable transaction. Production screens, routing, configuration, and data remain unchanged.
+- Bound generator uploads to the configured public app origin so authenticated downloads work behind Railway's HTTPS proxy without trusting forwarded-host headers.
+
+## 2026-10-12
+
+- Added staging-only active navigation and persistent selected-program context across dashboard and administration pages.
+- Clarified PDF/ZIP generation states and retry actions, distinguishing saved assessments from downloadable reports; added useful refresh and first-upload actions for empty or unavailable history.
+- Simplified staging account settings with inline validation, pending controls, persistent save confirmation, and an explicit re-sign-in step after email changes; bound edits to the authenticated account and preserved confirmation while the session still uses the previous email.
+- Added a staging-only searchable trainee roster with program/PGY filters, pagination, explicit empty states, and program-specific setup links; kept trainee dates stable across browser timezones.
+- Clarified staging trainee setup with the destination program, required spreadsheet headings, template links, and actionable file/row errors; verified destination access again on submission.
+- Added a task-focused staging Start page for trainee management, assessment uploads, and Results, while preserving detailed guidance and production's existing screens.
+- Added a staging-only Results destination with assessment history, explicit milestone/readiness links, and assessment downloads.
+- Added trainee detail alongside the comparison table, preserving trainee selection when switching report types and showing complete names, registered identifiers, program, and assessment period.
+- Corrected staging feedback identity and report context, isolating feedback state when switching trainees to prevent stale lookups from appearing for another trainee.
+- Added a staging-only results endpoint with program-access checks; production report views and calculations remain unchanged.
+
+## 2026-10-10
+
+- Made Check spreadsheet the primary staging import action, automatically opening column matching when headers need attention. Kept manual adjustments in a smaller link and preserved column selections across rechecks.
+- Simplified staging imports to always read the first tab, removing worksheet selection and extra-tab notices while retaining header-row and column matching controls.
+- Highlighted unmatched or duplicate column mappings, unmatched trainees, and cell errors with explicit attention labels; added spacing and small-screen wrapping between spreadsheet action buttons.
+- Added staging-only worksheet/header selection, explicit column matching and ignored columns, editable cell-level corrections, and a corrected XLSX download from the validated preview. Confirmation binds these choices and edits to the preview and repeats all validation; original files and production's import flow remain unchanged.
+- Added staging-only unmatched trainee resolution with explicit, program-scoped choices and preview-bound confirmation; matching changes only the current upload, never the roster.
+- Added assessment-level duplicate detection, opt-in skipping of identical rows, links to earlier imports, and blocking of conflicting ratings. An atomic, per-program database lock rechecks duplicates before saving, including simultaneous confirmations; no schema migration is required.
+- Added a staging-only check-and-confirm spreadsheet import: automatic header/table detection, safe formatting normalization, exact cell errors, and a no-write preview with trainee/measurement counts. Confirmation revalidates access and a signed file/user/program-bound preview; R receives the normalized workbook. Production's legacy import path is unchanged.
+- Avoided secondary mixed-year/season warnings caused solely by invalid cells, keeping spreadsheet correction messages focused on the source problem.
+- Restricted header and season alias lookup to explicit supported entries.
+- Kept wide staging preview tables inside their scrollable area instead of expanding the entire page.
+- Normalized numeric text PGY cells before persistence, rejected invalid PGY types, and corrected import summaries to count stored measurements rather than spreadsheet rows.
+- Added guarded staging-only scheduled input cleanup with separate input credentials; retained the 30-day input retention period and protection for active jobs and report outputs.
+- Added isolated staging input/output buckets, program-authorized private downloads, and storage smoke checks with optional synthetic test fixtures; production AWS defaults remain unchanged.
+- Added a staging-only private R processor for spreadsheet, PDF, and ZIP generation using the supplied CBME package and model, with authenticated requests, bounded concurrency, timeouts, and isolated job files.
+- Added an explicit staging provider switch for imports and background reports; the existing provider remains the default and private routing is rejected outside staging.
+- Serialized private-processor exports in the legacy import path to respect its one-job capacity while leaving the existing provider's parallel behavior unchanged.
+- Added synthetic local and Railway pre-deploy checks without database or storage writes. Production configuration and deployment remain unchanged.
+
 ## 2026-10-06
 
 - Added trainee counts and a program-specific View Trainees page for global admins, accessible from Programs and each institution's program list. The roster shows uploaded program-assigned identifiers, encrypted LEARN IDs, trainee start dates, and stored PGY, with identifier search, PGY filtering, and pagination.
