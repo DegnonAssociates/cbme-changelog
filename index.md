@@ -10,6 +10,8 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-17
 
+- Wrapped the staging form context in a named client component to keep its server-rendered layout boundary explicit.
+
 - Applied the approved grouped editor to all nine staging admin add/edit forms, with record headings, related field sections, responsive layouts, and explicit Cancel/Save actions.
 - Added linked field validation, focus on error summaries, retained edits after failed saves, and pending/empty member states. Staging framework assignment edits now show their stored selections. Existing server actions, hidden identifiers, callbacks, authorization, and production layouts remain unchanged.
 
