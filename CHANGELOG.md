@@ -6,6 +6,8 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-17
 
+- Render staging administration per request, keeping authenticated admin pages out of build-time prerendering. The production layout retains its existing rendering path.
+
 - Wrapped the staging form context in a named client component to keep its server-rendered layout boundary explicit.
 
 - Applied the approved grouped editor to all nine staging admin add/edit forms, with record headings, related field sections, responsive layouts, and explicit Cancel/Save actions.
