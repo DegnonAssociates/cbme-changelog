@@ -8,6 +8,11 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-10-17
+
+- Applied the approved grouped editor to all nine staging admin add/edit forms, with record headings, related field sections, responsive layouts, and explicit Cancel/Save actions.
+- Added linked field validation, focus on error summaries, retained edits after failed saves, and pending/empty member states. Staging framework assignment edits now show their stored selections. Existing server actions, hidden identifiers, callbacks, authorization, and production layouts remain unchanged.
+
 ## 2026-10-16
 
 - Added a staging-only Administration home grouping programs and people, activity and exports, and reference data, with all ten existing admin destinations available.
