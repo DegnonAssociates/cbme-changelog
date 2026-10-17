@@ -4,6 +4,12 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-10-16
+
+- Added a staging-only Administration home grouping programs and people, activity and exports, and reference data, with all ten existing admin destinations available.
+- Moved staging Administration into its own sidebar section below Results and added administration context and return navigation on admin pages.
+- Added staging admin table search, active/inactive filters where applicable, matching counts, and clear empty/error states while preserving existing actions, server-side roster/metrics filters, Global Admin permissions, and production presentation.
+
 ## 2026-10-15
 
 - Send password-reset email directly through Amazon SES using dedicated `SES_*` settings and the existing CBME AWS user, removing the AWS-API mail relay dependency.
