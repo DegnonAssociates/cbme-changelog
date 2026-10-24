@@ -10,6 +10,8 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-24
 
+- Shortened staging EPA Import guidance by placing the file picker first and keeping detailed column, formatting, and EPA-scale rules in expandable help. Added explicit not-imported, checked, importing, and saved states.
+- Added staging-only unsaved-work warnings for assessment corrections/previews, account and administration edits, and trainee setup files. Canceled navigation preserves edits, successful saves release protection, and failed program changes restore warnings; production behavior and import payloads remain unchanged.
 - Added staging Results filename search, assessment season/year filters, newest-first ordering, and ten assessments per page, with clear matching counts and no-match recovery.
 - Added trainee name/ID search and PGY filters across staging comparison and detail views. Report-type navigation preserves filters and the selected trainee, including when that trainee has no results in one report.
 - Matched report-page spreadsheet, PDF, and ZIP download buttons to the shared staging treatment while preserving complete-assessment downloads, report values, and production behavior.
