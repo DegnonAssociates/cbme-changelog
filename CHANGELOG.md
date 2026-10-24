@@ -6,6 +6,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-24
 
+- Fixed staging's initial program-selection race: wait for the saved selection to load and attempt automatic fallback only once, preventing repeated page reloads while preserving manual program-switch warnings and production behavior.
 - Shortened staging EPA Import guidance by placing the file picker first and keeping detailed column, formatting, and EPA-scale rules in expandable help. Added explicit not-imported, checked, importing, and saved states.
 - Added staging-only unsaved-work warnings for assessment corrections/previews, account and administration edits, and trainee setup files. Canceled navigation preserves edits, successful saves release protection, and failed program changes restore warnings; production behavior and import payloads remain unchanged.
 - Added staging Results filename search, assessment season/year filters, newest-first ordering, and ten assessments per page, with clear matching counts and no-match recovery.
