@@ -4,6 +4,12 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-10-24
+
+- Added staging Results filename search, assessment season/year filters, newest-first ordering, and ten assessments per page, with clear matching counts and no-match recovery.
+- Added trainee name/ID search and PGY filters across staging comparison and detail views. Report-type navigation preserves filters and the selected trainee, including when that trainee has no results in one report.
+- Matched report-page spreadsheet, PDF, and ZIP download buttons to the shared staging treatment while preserving complete-assessment downloads, report values, and production behavior.
+
 ## 2026-10-17
 
 - Render staging administration per request, keeping authenticated admin pages out of build-time prerendering. The production layout retains its existing rendering path.
