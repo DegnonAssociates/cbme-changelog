@@ -4,6 +4,10 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-10-26
+
+- Explain expired sessions on the login screen and ask users to sign in again. Protected requests with invalid session cookies preserve the requested page for return after login; first-time visitors keep the normal login flow.
+
 ## 2026-10-24
 
 - Fixed staging's initial program-selection race: wait for the saved selection to load and attempt automatic fallback only once, preventing repeated page reloads while preserving manual program-switch warnings and production behavior.
