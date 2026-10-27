@@ -10,6 +10,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-10-27
 
+- Matched staging Create Account and Forgot Password to the updated login styling, with responsive light/dark panels, consistent searchable selector fields, return-to-login links, and clear pending/error feedback. Kept registration and reset operations and production presentation unchanged.
 - Replaced staging's animated welcome screen with a static, task-focused entry page and clear login/account actions. Matched the login page to the existing responsive light/dark styling while preserving authentication, callback validation, session-expired guidance, and production presentation.
 
 ## 2026-10-26
