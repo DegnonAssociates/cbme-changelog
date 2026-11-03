@@ -8,6 +8,10 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-11-03
+
+- Refer to “CBME Data Hub support” in report, assessment history, trainee setup, and LEARN ID generator messages.
+
 ## 2026-10-27
 
 - Matched staging Create Account and Forgot Password to the updated login styling, with responsive light/dark panels, consistent searchable selector fields, return-to-login links, and clear pending/error feedback. Kept registration and reset operations and production presentation unchanged.
