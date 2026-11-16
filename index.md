@@ -8,6 +8,10 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-11-16
+
+- Prevent failed report responses from crashing the background worker during response-stream cleanup, preserving the original error and retry behavior so later reports can still run.
+
 ## 2026-11-03
 
 - Refer to “CBME Data Hub support” in report, assessment history, trainee setup, and LEARN ID generator messages.
