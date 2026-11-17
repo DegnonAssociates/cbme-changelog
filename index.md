@@ -11,6 +11,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 ## 2026-11-17
 
 - Support PGY 4–5 in staging assessment imports and all R report formats. Save PGY with each assessment and use it in staging results, historical report inputs, and admin exports, independently of later roster changes. Historical assessments without a captured PGY remain unknown.
+- Extend report trajectory charts through the latest assessed PGY so PGY 4–5 observations remain visible.
 - Explain that corrected downloads omit ignored columns (including notes), other tabs, comments, original formatting, and the on-screen correction log.
 
 ## 2026-11-16
