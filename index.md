@@ -8,6 +8,10 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-11-18
+
+- Let staging program admins add a missing encrypted LEARN ID to a uniquely matched trainee from EPA Import or Trainee Data. The repair fills the existing trainee record and preserves enrollment and assessment history. EPA Import keeps the selected file and explains unsupported spreadsheet IDs separately.
+
 ## 2026-11-17
 
 - Support PGY 4–5 in staging assessment imports and all R report formats. Save PGY with each assessment and use it in staging results, historical report inputs, and admin exports, independently of later roster changes. Historical assessments without a captured PGY remain unknown.
