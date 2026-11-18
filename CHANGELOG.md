@@ -6,6 +6,7 @@ Entries before 2026-08-12 were reconstructed from the local git history.
 
 ## 2026-11-18
 
+- Accept commas, periods, and straight or curly apostrophes in existing trainee IDs in staging EPA imports and their spreadsheet, PDF, and ZIP reports.
 - Let staging program admins add a missing encrypted LEARN ID to a uniquely matched trainee from EPA Import or Trainee Data. The repair fills the existing trainee record and preserves enrollment and assessment history. EPA Import keeps the selected file and explains unsupported spreadsheet IDs separately.
 
 ## 2026-11-17
