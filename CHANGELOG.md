@@ -4,6 +4,10 @@ Reverse chronological record of app features, updates, and bugfixes since creati
 
 Entries before 2026-08-12 were reconstructed from the local git history.
 
+## 2026-11-20
+
+- Removed the built-in staging encrypted LEARN ID generator. Trainee setup now links to the APPD LEARN site to generate IDs.
+
 ## 2026-11-19
 
 - Reject encrypted LEARN IDs shorter than 20 characters on trainee roster upload. Staging program admins can repair a short ID on an existing trainee from Trainee Data or EPA Import while preserving enrollment and assessment history.
